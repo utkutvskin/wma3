@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-# Load the target template image (grayscale) and the video source
+
 template_img = cv2.imread('photo_3_train.jpg', cv2.IMREAD_GRAYSCALE)
 cap = cv2.VideoCapture('video_3_query.mp4')
 
@@ -57,7 +57,7 @@ while cap.isOpened():
 
     cv2.imshow('Program 3 - Dino Video Tracking', frame)
 
-    # Exit the video loop if 'q' is pressed
+
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
